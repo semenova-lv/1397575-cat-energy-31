@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Людмила Семенова](https://up.htmlacademy.ru/adaptive/31/user/1397575).
-* Наставник: [Александр Зиновьев](https://htmlacademy.ru/profile/id198751).
+* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
 
 ---
 
