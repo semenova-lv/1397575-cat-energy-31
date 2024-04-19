@@ -12,8 +12,12 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo" href="index.html" aria-label="page">
-      <!-- <picture></picture> -->
-      <img src="#" width="101" height="18" alt="Логотип Кэт энерджи">
+      <picture>
+        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-icon-desktop.svg">
+        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-icon-tablet.svg">
+        <img src="images/logo-icon-mobile.svg" width="33" height="38" alt="Логотип Кэт энерджи">
+      </picture>
+      <img src="images/logo-text.svg" width="101" height="18" alt="Логотип Кэт энерджи">
     </a>
     <nav class="page-header__nav page-nav">
       <button class="page-nav__toggle" type="button">
@@ -41,7 +45,11 @@
       <div class="hero__wrapper">
         <h2 class="hero__title title">Функциональное питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <img width="280" height="270" src="#" alt="Упаковка питания">
+        <picture>
+          <source media="(min-width: 1440px)" width="522" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+          <img src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания">
+        </picture>
         <a class="hero__button button" href="#">подобрать программу</a>
       </div>
     </section>
@@ -102,8 +110,14 @@
           <p>Затраты на питание: <span>15 000 РУБ.</span></p>
         </div>
         <div class="example__slider demo">
-          <img class="example__slider-image" width="560" height="512" src="#" alt="Кот до диеты">
-          <img class="example__slider-image" width="560" height="512" src="#" alt="Кот после диеты">
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-before@1x.png 1x, images/slider-image-before@2x.png 2x">
+            <img class="example__slider-image" width="280" height="256" src="images/slider-image-before-mobile@1x.png" srcset="images/slider-image-before-mobile@2x.png 2x" alt="Кот до диеты">
+          </picture>
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-after@1x.png 1x, images/slider-image-after@2x.png 2x">
+            <img class="example__slider-image" width="280" height="256" src="images/slider-image-after-mobile@1x.png" srcset="images/slider-image-after-mobile@2x.png 2x" alt="Кот после диеты">
+          </picture>
           <button class="example__slider-toggle" type="button">
             <span class="visually-hidden">Переключатель</span>
           </button>
