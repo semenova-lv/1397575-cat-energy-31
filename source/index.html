@@ -135,7 +135,11 @@
       </div>
       <div class="location__map">
         <!-- <iframe src="#" width="320" height="362" aria-hidden="false" tabindex="0"></iframe> -->
-        <img src="#" width="320" height="362" alt="Локация магазина Кэт энерджи">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x">
+          <img src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" width="320" height="362" alt="Локация магазина Кэт энерджи">
+        </picture>
         <div class="pin">Место на карте</div>
       </div>
     </section>
