@@ -1,0 +1,20 @@
+.location {
+
+}
+
+.location__description {
+
+}
+
+.location__text {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $text-special-grey;
+}
+
+.location__address {
+  line-height: 20px;
+  font-style: normal;
+}
