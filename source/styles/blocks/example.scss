@@ -11,7 +11,7 @@
 }
 
 .example__text {
-
+  font-family: $secondary-font;
 }
 
 .example__stats-list {
@@ -23,7 +23,6 @@
 }
 
 .example__stats-value {
-  font-family: $secondary-font;
   color: $black;
   font-size: 24px;
   line-height: 24px;
@@ -31,13 +30,13 @@
 }
 
 .example__stats-subtitle {
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 12px;
   text-transform: lowercase;
 }
 
 .example__caption {
-  font-family: $secondary-font;
   color: $black;
   line-height: 20px;
   text-transform: uppercase;
