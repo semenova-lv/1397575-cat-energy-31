@@ -27,6 +27,10 @@
       <nav class="page-header__nav navigation">
         <button class="navigation__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
+          <svg width="24" height="24" aria-hidden="true" focusable="false">
+            <use class="navigation__toggle--close-menu" href="../../icons/stack.svg#icon-cross"></use>
+            <use class="navigation__toggle--open-menu" href="../../icons/stack.svg#icon-menu"></use>
+          </svg>
         </button>
         <ul class="navigation__list site-list site-list--close">
           <li class="site-list__item site-list__item--current">
@@ -123,6 +127,9 @@
           </picture>
           <button class="example__slider-toggle" type="button">
             <span class="visually-hidden">Переключатель</span>
+            <svg width="40" height="256" aria-hidden="true" focusable="false">
+              <use href="../../icons/stack.svg#button-slider"></use>
+            </svg>
           </button>
         </div>
       </div>
@@ -150,7 +157,10 @@
     <div class="page-footer__content">
       <div class="container">
         <a class="page-footer__logo" href="#">
-          <img src="#" width="101" height="18" alt="Логотип Кэт энерджи">
+          <svg role="img" width="128" height="24" aria-labelledby="logotype">
+            <title>Сайт Кэт Энерджи</title>
+            <use id="logotype" href="../../icons/stack.svg#logo-text"></use>
+          </svg>
         </a>
 
         <section class="page-footer__social social">
@@ -158,26 +168,28 @@
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Вконтакте</span>
+                <span class="visually-hidden">HTML Academy в Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-                <span class="visually-hidden">YouTube</span>
+                <span class="visually-hidden">HTML Academy в YouTube</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Телеграмм</span>
+                <span class="visually-hidden">HTML Academy в Телеграмм</span>
               </a>
             </li>
           </ul>
         </section>
 
         <div class="page-footer__copyright copyright">
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетить сайт разработчика">
             <p class="copyright__text">HTML Academy</p>
-            <img class="copyright__logo" src="#" width="27" height="34" alt="Логотип HTML Academy">
+            <svg role="img" width="27" height="34">
+              <use class="copyright__logo" href="../../icons/stack.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
