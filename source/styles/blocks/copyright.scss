@@ -5,13 +5,20 @@
 .copyright__link {
   text-decoration: none;
   color: inherit;
-}
 
+  &:hover .copyright__logo {
+    fill: $bg-basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
 
 .copyright__text {
   font-family: $secondary-font;
 }
 
 .copyright__logo {
-
+  fill: #666666;
 }
