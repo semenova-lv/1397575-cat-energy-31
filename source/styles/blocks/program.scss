@@ -13,9 +13,12 @@
     content: "";
     width: 67px;
     height: 53px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &--slim::before {
+    // background-image: url("../../icons/stack.svg#icon-slim"), radial-gradient(circle, green 25px, white 25px);
     background-image: url("../../icons/stack.svg#icon-slim");
   }
 

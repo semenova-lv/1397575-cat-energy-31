@@ -11,7 +11,17 @@
 }
 
 .page-footer__logo {
+  &:hover .page-footer__logo-text {
+    fill: #3e3e3e;
+  }
 
+  &:active .page-footer__logo-text {
+    fill: #6b6b6b;
+  }
+}
+
+.page-footer__logo-text {
+  fill: $text-special-grey;
 }
 
 .page-footer__social {
