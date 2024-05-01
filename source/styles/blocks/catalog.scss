@@ -21,7 +21,6 @@
 }
 
 .catalog__subtitle {
-  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   color: $text-special-grey;
@@ -29,6 +28,7 @@
 }
 
 .catalog__subtext {
+  font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
 }

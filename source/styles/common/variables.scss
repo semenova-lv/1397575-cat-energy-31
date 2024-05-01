@@ -1,8 +1,8 @@
 /* здесь используйте глобальные переменные */
 
 /* Шрифты */
-$primary-font: "Lato", sans-serif;
-$secondary-font: "Oswald", sans-serif;
+$primary-font: "Oswald", sans-serif;
+$secondary-font: "Lato", sans-serif;
 
 /* Colors */
 $black: #000000;
@@ -14,3 +14,7 @@ $bg-basic-green: #68b738;
 $bg-special-green: #5eaa2f;
 $bg-basic-grey: #f2f2f2;
 $bg-special-grey: #eaeaea;
+
+/* Ширина */
+$tablet-width: 768px;
+$desktop-width: 1440px;

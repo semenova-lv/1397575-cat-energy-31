@@ -3,22 +3,49 @@
 }
 
 .program__title {
-  font-family: $secondary-font;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
   color: $black;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 67px;
+    height: 53px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--slim::before {
+    // background-image: url("../../icons/stack.svg#icon-slim"), radial-gradient(circle, green 25px, white 25px);
+    background-image: url("../../icons/stack.svg#icon-slim");
+  }
+
+  &--pro::before {
+    background-image: url("../../icons/stack.svg#icon-pro");
+  }
 }
 
 .program__description {
-
+  font-family: $secondary-font;
 }
 
 .program__link {
-  font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
   color: $black;
   text-decoration: none;
   text-transform: uppercase;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 12px;
+    background-image: url("../../icons/stack.svg#icon-arrow");
+  }
 }

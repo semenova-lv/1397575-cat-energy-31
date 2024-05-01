@@ -3,7 +3,28 @@
 }
 
 .navigation__toggle {
+  border: none;
+  background-color: inherit;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--close-menu {
+    width: 18px;
+    height: 18px;
+    background-image: url("../../icons/stack.svg#icon-cross");
+  }
+
+  &--open-menu {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../icons/stack.svg#icon-menu");
+  }
 }
 
 .navigation__list {

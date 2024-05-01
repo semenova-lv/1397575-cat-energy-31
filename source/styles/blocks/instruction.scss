@@ -13,9 +13,37 @@
 }
 
 .instruction__item {
+  &::before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: $bg-basic-green;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
+  &--healthy::before {
+    background-image: url("../../icons/stack.svg#icon-leaf");
+    background-size: 25px 28px;
+  }
+
+  &--cook::before {
+    background-image: url("../../icons/stack.svg#icon-powder");
+    background-size: 26px 29px;
+  }
+
+  &--portions::before {
+    background-image: url("../../icons/stack.svg#icon-cutlery");
+    background-size: 25px 30px;
+  }
+
+  &--results::before {
+    background-image: url("../../icons/stack.svg#icon-clock");
+    background-size: 26px 31px;
+  }
 }
 
 .instruction__description {
-
+  font-family: $secondary-font;
 }
