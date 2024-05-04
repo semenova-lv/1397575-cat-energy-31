@@ -29,4 +29,19 @@
 
 .navigation__list {
   margin: 0;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__toggle {
+    display: none;
+  }
+
+  .navigation__list {
+    position: static;
+  }
 }

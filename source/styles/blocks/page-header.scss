@@ -1,11 +1,37 @@
 .page-header {
   color: $black;
+  padding: 13px 0;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .page-header__logo {
+  width: 190px;
   text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .page-header__nav {
+  width: 24px;
+}
 
+@media (min-width: $tablet-width) {
+  .page-header {
+    padding: 25px 0;
+  }
+
+  .page-header__logo {
+    width: 174px;
+  }
+
+  .page-header__nav {
+    width: 440px;
+  }
 }

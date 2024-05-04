@@ -1,24 +1,22 @@
 .program {
-
-}
-
-.program__title {
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  color: $black;
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
 
   &::before {
+    margin-left: -8px;
+    margin-right: 11px;
     display: block;
     content: "";
     width: 67px;
     height: 53px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
   }
 
   &--slim::before {
-    // background-image: url("../../icons/stack.svg#icon-slim"), radial-gradient(circle, green 25px, white 25px);
     background-image: url("../../icons/stack.svg#icon-slim");
   }
 
@@ -27,8 +25,22 @@
   }
 }
 
+.program__title {
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $black;
+  margin: 0;
+  align-self: center;
+}
+
 .program__description {
   font-family: $secondary-font;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 23px 0;
+  border-bottom: 1px solid #d9d9d9;
+  grid-column: 1 / -1;
 }
 
 .program__link {
@@ -37,6 +49,7 @@
   color: $black;
   text-decoration: none;
   text-transform: uppercase;
+  grid-column: 1 / -1;
   display: flex;
   gap: 15px;
   align-items: center;
@@ -47,5 +60,66 @@
     width: 24px;
     height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow");
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1439px) {
+  .program {
+    grid-template-columns: 1fr min-content;
+    column-gap: 19px;
+    padding: 77px 30px 53px 53px;
+
+    &::before {
+      width: 268px;
+      height: 211px;
+      order: 5;
+      grid-column: 2/-1;
+      grid-row: 1/4;
+      margin: 0;
+    }
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program__description {
+    grid-column: 1/1;
+    border: none;
+    margin-bottom: 25px;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+    grid-column: 1/2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    padding: 40px 52px 55px 55px;
+
+    &::before {
+      width: 134px;
+      height: 106px;
+      margin-right: 47px;
+    }
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .program__description {
+    border: none;
+    margin-bottom: 0;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
