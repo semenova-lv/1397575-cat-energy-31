@@ -16,10 +16,24 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.page-header__logo img {
+  display: block;
 }
 
 .page-header__nav {
-  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: $tablet-width) {

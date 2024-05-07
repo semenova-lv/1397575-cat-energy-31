@@ -50,6 +50,7 @@
   text-decoration: none;
   text-transform: uppercase;
   grid-column: 1 / -1;
+  justify-self: start;
   display: flex;
   gap: 15px;
   align-items: center;
@@ -57,9 +58,21 @@
   &::after {
     display: block;
     content: "";
-    width: 24px;
+    width: 32px;
     height: 12px;
     background-image: url("../../icons/stack.svg#icon-arrow");
+    background-size: contain;
+    background-position: -8px 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::after {
+    background-position: 0 0;
+    transition: background-position 0.4s;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
@@ -94,6 +107,7 @@
     font-size: 20px;
     line-height: 30px;
     grid-column: 1/2;
+    gap: 25px;
   }
 }
 
@@ -121,5 +135,6 @@
   .program__link {
     font-size: 20px;
     line-height: 30px;
+    gap: 25px;
   }
 }
