@@ -14,9 +14,22 @@
     background-color: $bg-basic-green;
   }
 
+  &--primary:hover {
+    background-color: $bg-special-green;
+  }
+
+  &--primary:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--secondary {
     color: $text-basic-grey;
     background-color: $bg-basic-grey;
+  }
+
+  &--secondary:hover,
+  &--secondary:active {
+    background-color: #ebebeb;
   }
 }
 

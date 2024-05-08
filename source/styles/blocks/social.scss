@@ -3,9 +3,13 @@
 }
 
 .social__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   list-style: none;
+  width: 132px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 
 .social__item {

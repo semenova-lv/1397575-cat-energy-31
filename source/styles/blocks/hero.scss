@@ -1,19 +1,87 @@
 .hero {
-  @media (max-width: $tablet-width) {
-    background-color: $bg-basic-green;
-    color: $white;
-    text-align: center;
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $white 302px), url("../../images/hero-background-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  padding-top: 27px;
+  padding-bottom: 20px;
+  background-color: $bg-basic-green;
+  color: $white;
+  text-align: center;
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $white 302px), url("../../images/hero-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 
-    @media (resolution: 2dppx) {
-      background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $white 302px), url("../../images/hero-background-mobile@2x.jpg");
-    }
+  @media (resolution: 2dppx) {
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $white 302px), url("../../images/hero-background-mobile@2x.jpg");
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__title {
+  color: $white;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.hero__slogan {
+  text-transform: uppercase;
+  line-height: 14px;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.hero__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    color: $black;
+    background-color: $white;
+    background-image: none;
+    text-align: start;
+    padding-top: 40px;
+    min-height: 850px;
   }
 
-  @media (min-width: $desktop-width) {
+  .hero__wrapper {
+    padding-left: 90px;
+  }
+
+  .hero__title {
+    color: inherit;
+    line-height: 60px;
+    width: 500px;
+    margin-bottom: 40px;
+  }
+
+  .hero__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .hero__image {
+    position: absolute;
+    margin-left: -90px;
+    margin-top: -29px;
+  }
+
+  .hero__button {
+    font-size: 20px;
+    line-height: 26px;
+    width: 244px;
+    z-index: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    margin-top: -100px;
+    min-height: 694px;
     background-image: linear-gradient(to right, $white 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/hero-background-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -23,19 +91,13 @@
       background-image: linear-gradient(to right, $white 50% rgba(104, 183, 56, 0.85) 50%), url("../../images/hero-background-desktop@2x.jpg");
     }
   }
-}
 
-.hero__title {
-  @media (max-width: $tablet-width) {
-    color: $white;
+  .hero__wrapper {
+    padding-top: 143px;
   }
-  line-height: 36px;
-}
 
-.hero__slogan {
-  text-transform: uppercase;
-}
-
-.hero__button {
-  width: 100%;
+  .hero__image {
+    top: 143px;
+    right: 331px;
+  }
 }

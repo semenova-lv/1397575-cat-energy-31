@@ -5,6 +5,10 @@
 .copyright__link {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  gap: 23px;
+  justify-content: space-between;
+  align-items: center;
 
   &:hover .copyright__logo {
     fill: $bg-basic-green;
@@ -17,8 +21,16 @@
 
 .copyright__text {
   font-family: $secondary-font;
+  margin: 0;
+  line-height: 20px;
 }
 
 .copyright__logo {
   fill: #666666;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    justify-content: end;
+  }
 }

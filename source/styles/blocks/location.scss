@@ -1,9 +1,11 @@
 .location {
-
+  position: relative;
+  background-color: $white;
 }
 
 .location__description {
-
+  padding: 26px 0;
+  display: flex;
 }
 
 .location__text {
@@ -11,10 +13,59 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $text-special-grey;
+  width: 50%;
+  margin: 0;
 }
 
 .location__address {
   font-family: $secondary-font;
   line-height: 20px;
   font-style: normal;
+  width: 50%;
+}
+
+.location__map {
+
+}
+
+.location__image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: $tablet-width) {
+  .location__description {
+    padding: 61px 0;
+    justify-content: space-between;
+  }
+
+  .location__text {
+    font-size: 20px;
+    line-height: 26px;
+    width: 200px;
+  }
+
+  .location__address {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location__description {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    width: 565px;
+    padding: 60px 80px;
+    box-sizing: border-box;
+    background-color: $white;
+    justify-content: space-between;
+  }
 }
