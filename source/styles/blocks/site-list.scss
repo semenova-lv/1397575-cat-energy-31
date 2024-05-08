@@ -33,6 +33,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .site-list--close {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .site-list {
     position: static;
