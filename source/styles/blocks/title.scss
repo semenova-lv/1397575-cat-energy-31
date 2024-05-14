@@ -49,3 +49,22 @@
     box-shadow: -40px 0 0 0 $white, 40px 0 0 0 $white;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+
+    &--secondary {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title--secondary {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
