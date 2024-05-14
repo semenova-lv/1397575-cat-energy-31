@@ -1,0 +1,22 @@
+.field {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 30px;
+  color: $text-basic-grey;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+  padding: 12px;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: $text-basic-grey;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  // &:invalid {
+  //   border: 2px solid #ff8282;
+  // }
+}

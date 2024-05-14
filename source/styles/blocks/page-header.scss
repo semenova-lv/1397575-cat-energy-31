@@ -46,6 +46,26 @@
   }
 
   .page-header__nav {
-    width: 440px;
+    // width: 440px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    padding: 0;
+    padding-top: 55px;
+  }
+
+  .page-header__logo {
+    width: 202px;
+  }
+
+  .page-header__logo-text {
+    width: 118px;
+    height: 21px;
+  }
+
+  .page-header__nav {
+    // width: 475px;
   }
 }
