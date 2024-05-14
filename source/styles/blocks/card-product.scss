@@ -1,7 +1,9 @@
 .card-product {
   padding: 20px;
   padding-bottom: 24px;
-  background-image: linear-gradient(to bottom, transparent 81px, $bg-basic-grey 81px);
+  padding-right: calc((100% - 280px) / 2);
+  padding-left: calc((100% - 280px) / 2);
+  // background-image: linear-gradient(to bottom, transparent 81px, $bg-basic-grey 81px);
   display: flex;
   flex-wrap: wrap;
 }
@@ -44,6 +46,7 @@
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 16px;
+  margin: 0;
 }
 
 .card-product__property-item {
@@ -51,16 +54,55 @@
   justify-content: space-between;
 }
 
-.card-product__feature {
+// .card-product__feature {
 
-}
+// }
 
-.card-product__definition {
+// .card-product__definition {
 
-}
+// }
 
 .card-product__button {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .card-product {
+    padding: 10px 37px 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-basic-grey;
+  }
+
+  .card-product__illustration {
+    width: 200px;
+    height: 210px;
+    margin: 0 auto;
+    margin-bottom: 22px;
+    margin-top: -81px;
+  }
+
+  .card-product__information {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .card-product__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-product__property-item {
+    font-size: 16px;
+    line-height: 20px;
+    padding: 5px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 @media (min-width: $tablet-width) {

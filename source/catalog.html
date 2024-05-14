@@ -276,8 +276,10 @@
             </article>
           </li>
           <li class="catalog__product-item catalog__product-item--foot">
-            <p class="catalog__subtitle">Показать еще 100500 товаров</p>
-            <p class="catalog__subtext">На самом деле вкусов гораздо больше!</p>
+            <div class="catalog__foot-information">
+              <p class="catalog__subtitle">Показать еще 100500&nbsp;товаров</p>
+              <p class="catalog__subtext">На самом деле вкусов гораздо&nbsp;больше!</p>
+            </div>
             <a class="catalog__button button button--secondary" href="#">Показать все</a>
           </li>
         </ul>
@@ -285,7 +287,7 @@
     </section>
 
     <section class="additional-products">
-      <div class="container">
+      <div class="additional-products__wrapper container">
         <h2 class="additional-products__title title title--secondary">Дополнительные товары</h2>
         <ul class="additional-products__list">
           <li class="additional-products__item">
@@ -342,7 +344,7 @@
               <a class="additional-product__button button button--primary" href="#">Заказать</a>
             </article>
           </li>
-          <li class="additional-products__itemt">
+          <li class="additional-products__item">
             <article class="additional-product">
               <a class="additional-product__link" href="#">
                 <h3 class="additional-product__title">Витамины</h3>
@@ -362,7 +364,7 @@
           </li>
         </ul>
         <div class="additional-products__promo">
-          <p class="additional-products__text-promo">Закажите все и получите чехол для кота в подарок!</p>
+          <p class="additional-products__text-promo">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -374,7 +376,7 @@
         <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form subscribe-form" action="https://echo.htmlacademy.ru" method="post">
           <label class="visually-hidden" for="subscribe-email">Email</label>
-          <input class="subscribe-form__input" type="email" id="subscribe-email" name="subscribe-email" placeholder="кuklachev@gmail.com" required>
+          <input class="subscribe-form__field field" type="email" id="subscribe-email" name="subscribe-email" placeholder="кuklachev@gmail.com" required>
           <button class="subscribe-form__button button button--primary" type="submit">Подписаться</button>
         </form>
       </div>
@@ -384,8 +386,8 @@
   <footer class="page-footer">
     <section class="page-footer__location location">
       <h2 class="visually-hidden">Где нас найти</h2>
-      <div class="location__description container">
-        <p class="location__text">Приглашаем к сотрудничеству дилеров!</p>
+      <div class="location__description location__description--inner">
+        <p class="location__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="city">Санкт-Петербург</span></address>
       </div>
       <div class="location__map">

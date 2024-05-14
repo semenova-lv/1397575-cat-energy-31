@@ -1,3 +1,7 @@
+:root {
+  --left: 50%;
+}
+
 .example {
   background-color: $bg-special-grey;
   padding-top: 25px;
@@ -91,14 +95,14 @@
   top: 0;
   left: 0;
   overflow: hidden;
-  width: 50%;
+  width: var(--left);
   background-color: $bg-special-grey;
 }
 
 .example__delimiter {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: var(--left);
   width: 2px;
   height: 100%;
   background-color: #666666;
@@ -178,6 +182,7 @@
   }
 
   .example__stats-list {
+    margin: 0;
     display: flex;
     gap: 43px;
   }
@@ -202,16 +207,20 @@
   }
 
   .example__caption {
+    font-size: 20px;
+    line-height: 20px;
     margin-left: auto;
     display: flex;
     flex-direction: column;
     align-items: end;
+    gap: 9px;
   }
 
   .example__slider {
     margin: 0 auto;
     width: 560px;
     height: 512px;
+    // background-image: linear-gradient(to top, transparent 365px, $white 365px);
   }
 
   .example__slider-comparison {

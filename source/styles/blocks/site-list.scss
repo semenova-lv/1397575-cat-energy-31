@@ -70,6 +70,8 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
+    width: 478px;
+    font-size: 20px;
     line-height: 30px;
 
     &--white {

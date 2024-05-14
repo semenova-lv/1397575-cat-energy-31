@@ -1,16 +1,17 @@
 .hero {
   padding-top: 27px;
   padding-bottom: 20px;
-  background-color: $bg-basic-green;
+  // background-color: $bg-basic-green;
+  background-color: #434248;
   color: $white;
   text-align: center;
-  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $white 302px), url("../../images/hero-background-mobile@1x.jpg");
+  background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $white 302px), url("../../images/hero-background-mobile@1x.jpg"), linear-gradient(to right, #504f55 50%, #434248 50%);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain, 320px 302px, contain;
   background-position: top;
 
   @media (resolution: 2dppx) {
-    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $white 302px), url("../../images/hero-background-mobile@2x.jpg");
+    background-image: linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 302px, $white 302px), url("../../images/hero-background-mobile@2x.jpg"), linear-gradient(to right, #504f55 50%, #434248 50%);
   }
 }
 
@@ -43,8 +44,9 @@
     background-color: $white;
     background-image: none;
     text-align: start;
+    padding: 0;
     padding-top: 40px;
-    min-height: 850px;
+    min-height: 810px;
   }
 
   .hero__wrapper {
@@ -74,17 +76,19 @@
     font-size: 20px;
     line-height: 26px;
     width: 244px;
+    padding: 14px;
+    box-sizing: border-box;
     z-index: 2;
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero {
-    margin-top: -100px;
-    min-height: 694px;
+    margin-top: -114px;
+    min-height: 655px;
     background-image: linear-gradient(to right, $white 50%, rgba(104, 183, 56, 0.85) 50%), url("../../images/hero-background-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: contain, 50% auto;
     background-position: center, top 0 right 0;
 
     @media (resolution: 2dppx) {
@@ -93,11 +97,14 @@
   }
 
   .hero__wrapper {
-    padding-top: 143px;
+    position: relative;
+    padding-top: 185px;
+    padding-left: 80px;
   }
 
   .hero__image {
-    top: 143px;
-    right: 331px;
+    margin: 0;
+    top: 102px;
+    left: 447px;
   }
 }
