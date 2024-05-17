@@ -105,37 +105,8 @@
   }
 }
 
-@media (min-width: $tablet-width) {
-  .card-product {
-    padding: 10px 37px 40px;
-    display: flex;
-    flex-direction: column;
-  }
-
+@media (min-width: $desktop-width) {
   .card-product__illustration {
-    width: 200px;
-    height: 210px;
-    margin: 0 auto;
-    margin-bottom: 22px;
-  }
-
-  .card-product__information {
-    width: 100%;
-    margin-bottom: 32px;
-  }
-
-  .card-product__title {
-    font-size: 20px;
-    line-height: 24px;
-    margin-bottom: 20px;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-product__property-item {
-    font-size: 16px;
-    line-height: 20px;
+    width: 169px;
   }
 }

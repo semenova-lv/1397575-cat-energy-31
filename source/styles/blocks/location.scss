@@ -40,7 +40,7 @@
 
 @media (min-width: $tablet-width) {
   .location__description {
-    padding: 61px 70px;
+    padding: 61px calc((100% - 628px) / 2);
     justify-content: space-between;
   }
 
@@ -65,7 +65,7 @@
   .location__description {
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc((100% - 1220px) / 2);
     width: 565px;
     padding: 60px 80px;
     box-sizing: border-box;
