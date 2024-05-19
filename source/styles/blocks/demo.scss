@@ -1,0 +1,91 @@
+:root {
+  --left: 50%;
+}
+
+.demo {
+  width: 280px;
+  position: relative;
+  height: 256px;
+}
+
+.demo__wrapper-comparison {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: var(--left);
+}
+
+// .demo__image {
+
+// }
+
+.demo__delimiter {
+  position: absolute;
+  top: 0;
+  left: var(--left);
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border-radius: 2px;
+
+  &:has(.demo__toggle:hover) {
+    background-color: $bg-basic-green;
+  }
+
+  &:has(.demo__toggle:active) {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+}
+
+.demo__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 0;
+  border: 2px solid #666666;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  // box-sizing: border-box;
+  top: 50%;
+  left: 2px;
+  transform: translate(-50%, -50%);
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#button-slider");
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  &:hover {
+    border-color: $bg-basic-green;
+  }
+
+  &:hover::before {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    border-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:active::before {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .demo {
+    width: 560px;
+    height: 512px;
+  }
+}

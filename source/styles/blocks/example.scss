@@ -1,7 +1,3 @@
-:root {
-  --left: 50%;
-}
-
 .example {
   background-color: $bg-special-grey;
   padding-top: 25px;
@@ -34,6 +30,7 @@
 }
 
 .example__stats-list {
+  margin: 0;
   display: flex;
   gap: 32px;
 }
@@ -47,6 +44,8 @@
   height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 1px;
+  box-sizing: border-box;
+  margin-bottom: 14px;
 }
 
 .example__stats-value {
@@ -85,77 +84,10 @@
 
 .example__slider {
   grid-column: 1 / -1;
-  width: 280px;
-  position: relative;
-  height: 256px;
 }
 
 .example__slider-comparison {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: var(--left);
   background-color: $bg-special-grey;
-}
-
-.example__delimiter {
-  position: absolute;
-  top: 0;
-  left: var(--left);
-  width: 2px;
-  height: 100%;
-  background-color: #666666;
-
-  &:has(.example__toggle:hover) {
-    background-color: $bg-basic-green;
-  }
-
-  &:has(.example__toggle:active) {
-    background-color: rgba(94, 170, 47, 0.6);
-  }
-}
-
-.example__toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  padding: 0;
-  border: 2px solid #666666;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  &::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 18px;
-    background-color: #666666;
-    mask-image: url("../../icons/stack.svg#button-slider");
-    mask-size: contain;
-    mask-position: center;
-    mask-repeat: no-repeat;
-  }
-
-  &:hover {
-    border-color: $bg-basic-green;
-  }
-
-  &:hover::before {
-    background-color: $bg-basic-green;
-  }
-
-  &:active {
-    border-color: rgba(94, 170, 47, 0.6);
-  }
-
-  &:active::before {
-    background-color: rgba(94, 170, 47, 0.6);
-  }
 }
 
 @media (min-width: $tablet-width) {
@@ -173,7 +105,7 @@
   .example__description {
     display: flex;
     flex-flow: row wrap;
-    margin-bottom: 100px;
+    margin-bottom: 89px;
   }
 
   .example__text {
@@ -182,7 +114,6 @@
   }
 
   .example__stats-list {
-    margin: 0;
     display: flex;
     gap: 43px;
   }
@@ -210,6 +141,8 @@
     font-size: 20px;
     line-height: 20px;
     margin-left: auto;
+    margin-top: 11px;
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -218,9 +151,6 @@
 
   .example__slider {
     margin: 0 auto;
-    width: 560px;
-    height: 512px;
-    // background-image: linear-gradient(to top, transparent 365px, $white 365px);
   }
 
   .example__slider-comparison {
@@ -232,7 +162,7 @@
   .example {
     background-image: linear-gradient(to bottom, $white 136px, transparent 136px);
     padding-top: 0;
-    padding-bottom: 85px;
+    padding-bottom: 75px;
   }
 
   .example__title {
@@ -244,6 +174,12 @@
     grid-column: 1;
     flex-direction: column;
     margin: 0;
+    row-gap: 45px;
+  }
+
+  .example__text {
+    width: 450px;
+    margin-bottom: 25px;
   }
 
   .example__stats-subtitle {
@@ -252,7 +188,6 @@
 
   .example__caption {
     margin: 0;
-    margin-top: 35px;
     flex-direction: row;
     gap: 63px;
     align-self: start;

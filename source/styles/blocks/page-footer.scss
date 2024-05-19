@@ -34,7 +34,7 @@
 }
 
 .page-footer__social {
-  padding: 20px 0;
+  padding: 19px 0;
   width: 100%;
   border-bottom: 1px solid #d9d9d9;
 }
@@ -69,5 +69,11 @@
   .page-footer__copyright {
     padding: 0;
     width: 33%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__content {
+    padding: 66px 0;
   }
 }
