@@ -1,6 +1,6 @@
 .card-product {
   padding: 20px;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   padding-right: calc((100% - 280px) / 2);
   padding-left: calc((100% - 280px) / 2);
   // background-image: linear-gradient(to bottom, transparent 81px, $bg-basic-grey 81px);
@@ -24,7 +24,7 @@
 
 .card-product__information {
   width: 50%;
-  margin-bottom: 17px;
+  margin-bottom: 21px;
 }
 
 .card-product__link {
@@ -90,7 +90,7 @@
   .card-product__title {
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     width: 100%;
     text-align: center;
     display: flex;
@@ -100,7 +100,7 @@
   .card-product__property-item {
     font-size: 16px;
     line-height: 20px;
-    padding: 5px 0;
+    padding: 7px 0 4px;
     border-bottom: 1px solid #cdcdcd;
   }
 }
@@ -108,5 +108,14 @@
 @media (min-width: $desktop-width) {
   .card-product__illustration {
     width: 169px;
+    margin-bottom: 12px;
+  }
+
+  .card-product__title {
+    margin-bottom: 17px;
+  }
+
+  .card-product__property-item {
+    padding: 6px 0 7px;
   }
 }

@@ -1,5 +1,5 @@
 .additional-product {
-  padding: 13px 0 19px;
+  padding: 13px 0 18px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 13px;
@@ -48,8 +48,8 @@
 
 @media (min-width: $tablet-width) {
   .additional-product {
-    padding: 25px 38px 28px;
-    gap: 13px;
+    padding: 25px 37px 27px;
+    gap: 20px 60px;
   }
 
   .additional-product__link {
@@ -59,14 +59,19 @@
   .additional-product__title {
     font-size: 20px;
     line-height: 20px;
+    min-height: 26px;
+    align-self: start;
   }
 
   .additional-product__property-list {
     font-size: 16px;
     line-height: 20px;
+    min-height: 26px;
+    padding: 0 3px;
     grid-column: 2;
-    justify-content: end;
-    gap: 49px;
+    display: grid;
+    grid-template-columns: 1fr 91px;
+    place-items: center end;
   }
 
   .additional-product__definition {
@@ -76,18 +81,24 @@
 
 @media (min-width: $desktop-width) {
   .additional-product {
-    padding: 15px 0;
+    padding: 15px 0 16px;
     grid-template-columns: 1fr 1fr min-content;
-    gap: 40px;
+    gap: 0;
+    align-items: baseline;
   }
 
   .additional-product__link {
     grid-column: 1;
   }
 
+  .additional-product__title {
+    align-self: center;
+  }
+
   .additional-product__property-list {
     grid-column: 2;
-    justify-content: space-between;
+    grid-template-columns: 1fr 80px;
+    place-items: center start;
   }
 
   .additional-product__button {
