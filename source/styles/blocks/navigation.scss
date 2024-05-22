@@ -30,12 +30,16 @@
   padding: 0;
   cursor: pointer;
 
-  &:hover {
+  &:not(:disabled):hover {
     opacity: 0.8;
   }
 
-  &:active {
+  &:not(:disabled):active {
     opacity: 0.6;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 }
 

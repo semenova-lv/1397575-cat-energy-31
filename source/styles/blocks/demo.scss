@@ -30,12 +30,16 @@
   background-color: #666666;
   border-radius: 2px;
 
-  &:has(.demo__toggle:hover) {
+  &:has(.demo__toggle:not(:disabled):hover) {
     background-color: $bg-basic-green;
   }
 
-  &:has(.demo__toggle:active) {
+  &:has(.demo__toggle:not(:disabled):active) {
     background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:has(.demo__toggle:disabled) {
+    opacity: 0.5;
   }
 }
 
@@ -49,10 +53,10 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  // box-sizing: border-box;
   top: 50%;
   left: 2px;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -66,20 +70,25 @@
     mask-repeat: no-repeat;
   }
 
-  &:hover {
+  &:not(:disabled):hover {
     border-color: $bg-basic-green;
   }
 
-  &:hover::before {
+  &:not(:disabled):hover::before {
     background-color: $bg-basic-green;
   }
 
-  &:active {
+  &:not(:disabled):active {
     border-color: rgba(94, 170, 47, 0.6);
   }
 
-  &:active::before {
+  &:not(:disabled):active::before {
     background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
   }
 }
 

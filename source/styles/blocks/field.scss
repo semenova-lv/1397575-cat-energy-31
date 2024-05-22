@@ -8,8 +8,12 @@
   padding: 12px;
   box-sizing: border-box;
 
-  &:hover {
+  &:not(:disabled):hover {
     border: 1px solid #cdcdcd;
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   &:not(:focus):not(:placeholder-shown):invalid {
