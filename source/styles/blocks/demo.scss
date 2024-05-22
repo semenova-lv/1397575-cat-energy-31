@@ -1,0 +1,100 @@
+:root {
+  --left: 50%;
+}
+
+.demo {
+  width: 280px;
+  position: relative;
+  height: 256px;
+}
+
+.demo__wrapper-comparison {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: var(--left);
+}
+
+// .demo__image {
+
+// }
+
+.demo__delimiter {
+  position: absolute;
+  top: 0;
+  left: var(--left);
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #666666;
+  border-radius: 2px;
+
+  &:has(.demo__toggle:not(:disabled):hover) {
+    background-color: $bg-basic-green;
+  }
+
+  &:has(.demo__toggle:not(:disabled):active) {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:has(.demo__toggle:disabled) {
+    opacity: 0.5;
+  }
+}
+
+.demo__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 0;
+  border: 2px solid #666666;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50%;
+  left: 2px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#button-slider");
+    mask-size: contain;
+    mask-position: center;
+    mask-repeat: no-repeat;
+  }
+
+  &:not(:disabled):hover {
+    border-color: $bg-basic-green;
+  }
+
+  &:not(:disabled):hover::before {
+    background-color: $bg-basic-green;
+  }
+
+  &:not(:disabled):active {
+    border-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:not(:disabled):active::before {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .demo {
+    width: 560px;
+    height: 512px;
+  }
+}

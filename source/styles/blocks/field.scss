@@ -8,15 +8,15 @@
   padding: 12px;
   box-sizing: border-box;
 
-  &::placeholder {
-    color: $text-basic-grey;
-  }
-
-  &:hover {
+  &:not(:disabled):hover {
     border: 1px solid #cdcdcd;
   }
 
-  // &:invalid {
-  //   border: 2px solid #ff8282;
-  // }
+  &:disabled {
+    opacity: 0.3;
+  }
+
+  &:not(:focus):not(:placeholder-shown):invalid {
+    border: 2px solid #ff8282;
+  }
 }
