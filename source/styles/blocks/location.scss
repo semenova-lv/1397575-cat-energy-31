@@ -39,6 +39,7 @@
   width: 100%;
   position: relative;
   z-index: 2;
+  border: none;
 }
 
 .location__image {
@@ -78,7 +79,6 @@
   }
 
   .location__map iframe {
-    border: none;
     height: 400px;
   }
 }

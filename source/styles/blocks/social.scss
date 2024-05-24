@@ -24,6 +24,8 @@
     display: block;
     width: 28px;
     height: 22px;
+    mask-position: center;
+    mask-repeat: no-repeat;
     background-color: #666666;
   }
 
@@ -37,13 +39,16 @@
 
   &--vkontakte::before {
     mask-image: url("../../icons/stack.svg#icon-vk");
+    mask-size: 27px 17px;
   }
 
   &--youtube::before {
     mask-image: url("../../icons/stack.svg#icon-youtube");
+    mask-size: 24px 19px;
   }
 
   &--telegram::before {
     mask-image: url("../../icons/stack.svg#icon-tg");
+    mask-size: 20px 17px;
   }
 }
