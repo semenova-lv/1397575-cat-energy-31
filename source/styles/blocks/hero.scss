@@ -1,7 +1,6 @@
 .hero {
   padding-top: 27px;
   padding-bottom: 20px;
-  // background-color: $bg-basic-green;
   background-color: #434248;
   color: $white;
   text-align: center;
@@ -46,7 +45,7 @@
     text-align: start;
     padding: 0;
     padding-top: 40px;
-    min-height: 810px;
+    min-height: 850px;
   }
 
   .hero__wrapper {
@@ -64,10 +63,11 @@
   .hero__slogan {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .hero__image {
+    display: block;
     position: absolute;
     margin-left: -90px;
     margin-top: -29px;
@@ -85,8 +85,6 @@
 
 @media (min-width: $desktop-width) {
   .hero {
-    // position: relative;
-    // margin-top: -114px;
     padding-top: 0;
     min-height: 580px;
     background-color: transparent;
@@ -109,7 +107,7 @@
       z-index: 1;
 
       @media (resolution: 2dppx) {
-        background-image: url("../../images/hero-background-desktop@2x.jpg");
+        background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero-background-desktop@2x.jpg");
       }
     }
   }
