@@ -37,9 +37,14 @@
 
 .location__map iframe {
   width: 100%;
+  display: block;
   position: relative;
   z-index: 2;
   border: none;
+}
+
+.location__map picture {
+  display: contents;
 }
 
 .location__image {
@@ -89,8 +94,8 @@
     top: 95px;
     left: calc((100% - 1220px) / 2);
     width: 565px;
+    min-height: 199px;
     padding: 60px 78px 60px 80px;
-    box-sizing: border-box;
     background-color: $white;
     justify-content: space-between;
     z-index: 3;
@@ -101,6 +106,7 @@
   }
 
   .location__address {
+    width: 157px;
     text-align: start;
   }
 }

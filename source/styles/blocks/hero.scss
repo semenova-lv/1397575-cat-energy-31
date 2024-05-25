@@ -45,7 +45,7 @@
     text-align: start;
     padding: 0;
     padding-top: 40px;
-    min-height: 810px;
+    min-height: 850px;
   }
 
   .hero__wrapper {
@@ -63,10 +63,11 @@
   .hero__slogan {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 52px;
   }
 
   .hero__image {
+    display: block;
     position: absolute;
     margin-left: -90px;
     margin-top: -29px;

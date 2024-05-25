@@ -86,7 +86,7 @@
   .program {
     grid-template-columns: 1fr min-content;
     column-gap: 19px;
-    padding: 77px 30px 55px 53px;
+    padding: 77px 30px 54px 53px;
 
     &::before {
       width: 268px;
@@ -112,8 +112,8 @@
 
   .program__description {
     grid-column: 1/1;
-    border: none;
-    margin-bottom: 32px;
+    box-shadow: none;
+    margin-bottom: 25px;
   }
 
   .program__link {
@@ -121,12 +121,13 @@
     line-height: 30px;
     grid-column: 1/2;
     gap: 25px;
+    min-height: 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .program {
-    padding: 40px 52px 55px 55px;
+    padding: 41px 52px 55px;
 
     &::before {
       width: 134px;
