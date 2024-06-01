@@ -1,7 +1,9 @@
 /* в этот файл добавляет скрипты*/
+const map = document.querySelector('.location__map');
 const navMain = document.querySelector('.navigation');
 const navToggle = document.querySelector('.navigation__toggle');
 
+map.classList.remove('location__map--nojs');
 navMain.classList.remove('navigation--nojs');
 
 navToggle.addEventListener('click', () => {
