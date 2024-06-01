@@ -1,24 +1,31 @@
-:root {
-  --left: 50%;
-}
-
 .demo {
+  --left: 50%;
   width: 280px;
   position: relative;
   height: 256px;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
-.demo__wrapper-comparison {
-  position: absolute;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  width: var(--left);
+.demo picture {
+  display: contents;
 }
 
-// .demo__image {
+.demo__image {
+  display: block;
 
-// }
+  &--before {
+    grid-column: 1;
+    grid-row: 1;
+    clip-path: inset(0 calc(100% - var(--left)) 0 0);
+  }
+
+  &--after {
+    grid-column: 1;
+    grid-row: 1;
+    clip-path: inset(0 0 0 var(--left));
+  }
+}
 
 .demo__delimiter {
   position: absolute;

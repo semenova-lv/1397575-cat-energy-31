@@ -32,7 +32,8 @@
 .example__stats-list {
   margin: 0;
   display: flex;
-  gap: 32px;
+  flex-wrap: wrap;
+  gap: 10px 32px;
 }
 
 .example__stats-item {
@@ -86,10 +87,6 @@
   grid-column: 1 / -1;
 }
 
-.example__slider-comparison {
-  background-color: $bg-special-grey;
-}
-
 @media (min-width: $tablet-width) {
   .example {
     background-color: $bg-special-grey;
@@ -114,8 +111,8 @@
   }
 
   .example__stats-list {
-    display: flex;
-    gap: 43px;
+    max-width: 500px;
+    column-gap: 43px;
   }
 
   .example__stats-item {
@@ -151,10 +148,6 @@
 
   .example__slider {
     margin: 0 auto;
-  }
-
-  .example__slider-comparison {
-    background-image: linear-gradient(to top, transparent 365px, $white 365px);
   }
 }
 
@@ -196,9 +189,5 @@
   .example__slider {
     grid-column: 2;
     grid-row: 1 / 3;
-  }
-
-  .example__slider-comparison {
-    background-image: linear-gradient(to bottom, $white 136px, transparent 136px);
   }
 }
