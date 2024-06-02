@@ -1,7 +1,3 @@
-// .programs {
-
-// }
-
 .programs__list {
   margin: 0;
   padding: 0;
@@ -10,10 +6,6 @@
   flex-direction: column;
   gap: 20px;
 }
-
-// .programs__item {
-
-// }
 
 @media (min-width: $tablet-width) {
   .programs__list {
