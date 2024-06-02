@@ -90,12 +90,15 @@
       padding: 50px 35px 38px;
       text-align: center;
       border: 2px solid $bg-basic-grey;
+      display: flex;
+      flex-direction: column;
     }
   }
 
   .catalog__foot-information {
     min-height: 217px;
     margin-bottom: 81px;
+    flex-grow: 1;
   }
 
   .catalog__subtitle {
@@ -117,7 +120,7 @@
   .catalog__subtext {
     font-size: 16px;
     line-height: 18px;
-    // padding: 0 40px;
+    margin-bottom: 0;
   }
 }
 
@@ -145,9 +148,5 @@
     &::before {
       margin-bottom: 40px;
     }
-  }
-
-  .catalog__subtext {
-    margin-bottom: 0;
   }
 }

@@ -81,6 +81,7 @@
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 91px;
+    column-gap: 0;
     place-items: center end;
   }
 
