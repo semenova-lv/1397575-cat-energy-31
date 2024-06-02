@@ -15,10 +15,6 @@
   background-repeat: no-repeat;
   background-size: contain, auto calc(100% - 198px), contain;
   background-position: top;
-
-  // @media (resolution: 2dppx) {
-  //   background-image: linear-gradient(to top, $white 198px, rgba(104, 183, 56, 0.85) 198px), url("../../images/hero-background-mobile@2x.jpg"), linear-gradient(to right, #504f55 50%, #434248 50%);
-  // }
 }
 
 .hero__wrapper {
@@ -42,6 +38,13 @@
   line-height: 14px;
   margin: 0;
   margin-bottom: 29px;
+}
+
+.hero__image {
+  display: block;
+  width: 280px;
+  height: 270px;
+  margin-bottom: 3px;
 }
 
 .hero__button {
@@ -85,7 +88,10 @@
   }
 
   .hero__image {
+    margin-bottom: 0;
     display: block;
+    width: 709px;
+    height: 609px;
   }
 
   .hero__button {
@@ -107,8 +113,6 @@
   .hero {
     padding-top: 0;
     min-height: 580px;
-    // background-color: transparent;
-    // background-repeat: no-repeat;
 
     &::after {
       content: "";
@@ -132,10 +136,6 @@
       background-repeat: no-repeat;
       background-color: #403f43;
       z-index: 1;
-
-      // @media (resolution: 2dppx) {
-      //   background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero-background-desktop@2x.jpg");
-      // }
     }
   }
 
@@ -159,9 +159,12 @@
 
   .hero__image {
     margin: 0;
+    width: 552px;
+    height: 499px;
   }
 
   .hero__button {
     margin-left: 80px;
+    margin-top: 30px;
   }
 }
