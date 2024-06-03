@@ -10,6 +10,9 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="script" href="scripts/index.js" media="(max-width: 767px)" type="text/javascript">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -54,7 +57,7 @@
           <source width="280" height="270" type="image/webp" srcset="images/index-can-mobile@1x.webp 1x, images/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x">
-          <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания">
+          <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания" loading="eager">
         </picture>
         <a class="hero__button button button--primary" href="#">Подобрать программу</a>
       </div>
@@ -122,13 +125,13 @@
             <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-image-after@1x.webp 1x, images/slider-image-after@2x.webp 2x">
             <source width="280" height="256" type="image/webp" srcset="images/slider-image-after-mobile@1x.webp 1x, images/slider-image-after-mobile@2x.webp 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-after@1x.png 1x, images/slider-image-after@2x.png 2x">
-            <img class="demo__image demo__image--after" width="280" height="256" src="images/slider-image-after-mobile@1x.png" srcset="images/slider-image-after-mobile@2x.png 2x" alt="Кот после диеты">
+            <img class="demo__image demo__image--after" width="280" height="256" src="images/slider-image-after-mobile@1x.png" srcset="images/slider-image-after-mobile@2x.png 2x" alt="Кот после диеты" loading="lazy">
           </picture>
           <picture>
             <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-image-before@1x.webp 1x, images/slider-image-before@2x.webp 2x">
             <source width="280" height="256" type="image/webp" srcset="images/slider-image-before-mobile@1x.webp 1x, images/slider-image-before-mobile@2x.webp 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-before@1x.png 1x, images/slider-image-before@2x.png 2x">
-            <img class="demo__image demo__image--before" width="280" height="256" src="images/slider-image-before-mobile@1x.png" srcset="images/slider-image-before-mobile@2x.png 2x" alt="Кот до диеты">
+            <img class="demo__image demo__image--before" width="280" height="256" src="images/slider-image-before-mobile@1x.png" srcset="images/slider-image-before-mobile@2x.png 2x" alt="Кот до диеты" loading="lazy">
           </picture>
           <div class="demo__delimiter">
             <button class=" demo__toggle" type="button">
@@ -148,14 +151,14 @@
         <address class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="city">Санкт-Петербург</span></address>
       </div>
       <div class="location__map location__map--nojs">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A98bced46b6c0de98b9df0d547919aa3e1833ad106260bd4717088d805b520d2e&amp;source=constructor" width="320" height="362" aria-hidden="false" tabindex="0" title="Локация магазина Кэт энерджи"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A98bced46b6c0de98b9df0d547919aa3e1833ad106260bd4717088d805b520d2e&amp;source=constructor" width="320" height="362" aria-hidden="false" tabindex="0" title="Локация магазина Кэт энерджи" loading="lazy"></iframe>
         <picture>
           <source media="(min-width: 1300px)" width="1440" height="400" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
           <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
           <source width="320" height="362" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-          <img class="location__image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина Кэт энерджи">
+          <img class="location__image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина Кэт энерджи" loading="lazy">
         </picture>
       </div>
     </section>
