@@ -10,53 +10,61 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" as="font" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="script" href="scripts/index.js" media="(max-width: 767px)" type="text/javascript">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
-  <header class="page-header container">
-    <a class="page-header__logo" href="index.html" aria-label="page">
-      <picture>
-        <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-icon-desktop.svg">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-icon-tablet.svg">
-        <img src="images/logo-icon-mobile.svg" width="33" height="38" alt="Логотип магазина для котов">
-      </picture>
-      <img class="page-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
-    </a>
-    <nav class="page-header__nav navigation navigation--closed navigation--nojs">
-      <button class="navigation__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <ul class="navigation__list site-list site-list--white">
-        <li class="navigation__item site-list__item site-list__item--current">
-          <a class="site-list__link" href="index.html" aria-label="page">Главная</a>
-        </li>
-        <li class="navigation__item site-list__item">
-          <a class="site-list__link" href="catalog.html">Каталог продукции</a>
-        </li>
-        <li class="navigation__item site-list__item">
-          <a class="site-list__link" href="#">Подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+  <header class="page__header">
+    <div class="page-header container">
+      <a class="page-header__logo" href="index.html" aria-label="page">
+        <picture>
+          <source media="(min-width: 1300px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-icon-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-icon-tablet.svg">
+          <img src="images/logo-icon-mobile.svg" width="33" height="38" alt="Логотип магазина для котов">
+        </picture>
+        <img class="page-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Кэт энерджи">
+      </a>
+      <nav class="page-header__nav navigation navigation--closed navigation--nojs">
+        <button class="navigation__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="navigation__list site-list site-list--white">
+          <li class="navigation__item site-list__item site-list__item--current">
+            <a class="site-list__link" href="index.html" aria-label="page">Главная</a>
+          </li>
+          <li class="navigation__item site-list__item">
+            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+          </li>
+          <li class="navigation__item site-list__item">
+            <a class="site-list__link" href="#">Подбор программы</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="hero__wrapper container">
+        <div class="hero__text-container">
+          <h1 class="hero__title title">Функциональное питание для котов</h1>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <picture>
+          <source media="(min-width: 1300px)" width="552" height="499" type="image/webp" srcset="images/index-can-desktop@1x.webp 1x, images/index-can-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/index-can-tablet@1x.webp 1x, images/index-can-tablet@2x.webp 2x">
+          <source width="280" height="270" type="image/webp" srcset="images/index-can-mobile@1x.webp 1x, images/index-can-mobile@2x.webp 2x">
+          <source media="(min-width: 1300px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x">
+          <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания" loading="eager">
+        </picture>
+        <a class="hero__button button button--primary" href="#">Подобрать программу</a>
+      </div>
+    </section>
   </header>
 
   <main class="main-container">
-    <section class="hero">
-      <div class="container">
-        <div class="hero__wrapper">
-          <h1 class="hero__title title">Функциональное питание для котов</h1>
-          <p class="hero__slogan">Занялся собой? Займись котом!</p>
-          <picture>
-            <source media="(min-width: 1300px)" width="552" height="499" type="image/png" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" width="709" height="609" type="image/jpeg" srcset="images/index-can-tablet@1x.jpg 1x, images/index-can-tablet@2x.jpg 2x">
-            <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Упаковка питания">
-          </picture>
-          <a class="hero__button button button--primary" href="#">Подобрать программу</a>
-        </div>
-      </div>
-    </section>
-
     <section class="programs">
       <div class="container">
         <h2 class="visually-hidden">Программы диет</h2>
@@ -114,15 +122,17 @@
         </div>
         <div class="example__slider demo">
           <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-image-after@1x.webp 1x, images/slider-image-after@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/slider-image-after-mobile@1x.webp 1x, images/slider-image-after-mobile@2x.webp 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-after@1x.png 1x, images/slider-image-after@2x.png 2x">
-            <img class="demo__image demo__image--after" width="280" height="256" src="images/slider-image-after-mobile@1x.png" srcset="images/slider-image-after-mobile@2x.png 2x" alt="Кот после диеты">
+            <img class="demo__image demo__image--after" width="280" height="256" src="images/slider-image-after-mobile@1x.png" srcset="images/slider-image-after-mobile@2x.png 2x" alt="Кот после диеты" loading="lazy">
           </picture>
-          <div class="example__slider-comparison demo__wrapper-comparison">
-            <picture>
-              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-before@1x.png 1x, images/slider-image-before@2x.png 2x">
-              <img class="demo__image demo__image--before" width="280" height="256" src="images/slider-image-before-mobile@1x.png" srcset="images/slider-image-before-mobile@2x.png 2x" alt="Кот до диеты">
-            </picture>
-          </div>
+          <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-image-before@1x.webp 1x, images/slider-image-before@2x.webp 2x">
+            <source width="280" height="256" type="image/webp" srcset="images/slider-image-before-mobile@1x.webp 1x, images/slider-image-before-mobile@2x.webp 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-image-before@1x.png 1x, images/slider-image-before@2x.png 2x">
+            <img class="demo__image demo__image--before" width="280" height="256" src="images/slider-image-before-mobile@1x.png" srcset="images/slider-image-before-mobile@2x.png 2x" alt="Кот до диеты" loading="lazy">
+          </picture>
           <div class="demo__delimiter">
             <button class=" demo__toggle" type="button">
               <span class="visually-hidden">Переключатель</span>
@@ -134,28 +144,28 @@
   </main>
 
   <footer class="page-footer">
-    <section class="page-footer__location location">
+    <section class="location">
       <h2 class="visually-hidden">Где нас найти</h2>
       <div class="location__description">
         <p class="location__text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
         <address class="location__address">ул. Большая Конюшенная, д. 19/8 <span class="city">Санкт-Петербург</span></address>
       </div>
-      <div class="location__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A98bced46b6c0de98b9df0d547919aa3e1833ad106260bd4717088d805b520d2e&amp;source=constructor" width="320" height="362" aria-hidden="false" tabindex="0" title="Локация магазина Кэт энерджи"></iframe>
+      <div class="location__map location__map--nojs">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A98bced46b6c0de98b9df0d547919aa3e1833ad106260bd4717088d805b520d2e&amp;source=constructor" width="320" height="362" aria-hidden="false" tabindex="0" title="Локация магазина Кэт энерджи" loading="lazy"></iframe>
         <picture>
+          <source media="(min-width: 1300px)" width="1440" height="400" type="image/webp" srcset="images/map-desktop@1x.webp 1x, images/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map-tablet@1x.webp 1x, images/map-tablet@2x.webp 2x">
+          <source width="320" height="362" type="image/webp" srcset="images/map-mobile@1x.webp 1x, images/map-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" width="1440" height="400" type="image/jpeg" srcset="images/map-desktop@1x.jpg 1x, images/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/map-tablet@1x.jpg 1x, images/map-tablet@2x.jpg 2x">
-          <img class="location__image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина Кэт энерджи">
+          <img class="location__image" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Локация магазина Кэт энерджи" loading="lazy">
         </picture>
       </div>
     </section>
 
     <div class="page-footer__content container">
-      <a class="page-footer__logo" href="#">
-        <svg role="img" width="128" height="24" aria-labelledby="logotype">
-          <title>Сайт Кэт Энерджи</title>
-          <use class="page-footer__logo-text" id="logotype" href="icons/stack.svg#logo-text"></use>
-        </svg>
+      <a class="page-footer__logo" href="index.html" aria-current="page">
+        <img width="128" height="24" src="images/logo-text.svg" alt="Логотип магазина для котов Кэт Энерджи">
       </a>
 
       <section class="page-footer__social social">
@@ -182,9 +192,6 @@
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Посетить сайт разработчика">
           <p class="copyright__text">HTML Academy</p>
-          <svg role="img" width="27" height="34">
-            <use class="copyright__logo" href="icons/stack.svg#logo-htmlacademy"></use>
-          </svg>
         </a>
       </div>
     </div>

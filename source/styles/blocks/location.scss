@@ -1,12 +1,13 @@
 .location {
-  position: relative;
   background-color: transparent;
 }
 
 .location__description {
   background-color: $white;
   padding: 26px calc((100% - 280px) / 2);
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  row-gap: 15px;
 
   &--inner {
     background-color: $bg-basic-grey;
@@ -18,7 +19,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $text-special-grey;
-  width: 50%;
+  width: 140px;
   margin: 0;
 }
 
@@ -26,7 +27,7 @@
   font-family: $secondary-font;
   line-height: 20px;
   font-style: normal;
-  width: 50%;
+  grid-column: 2;
 }
 
 .location__map {
@@ -37,6 +38,7 @@
 
 .location__map iframe {
   width: 100%;
+  min-height: 362px;
   display: block;
   position: relative;
   z-index: 2;
@@ -44,7 +46,7 @@
 }
 
 .location__map picture {
-  display: contents;
+  display: none;
 }
 
 .location__image {
@@ -57,10 +59,18 @@
   width: 100%;
 }
 
+.location__map--nojs iframe {
+  display: none;
+}
+
+.location__map--nojs picture {
+  display: contents;
+}
+
 @media (min-width: $tablet-width) {
   .location__description {
-    padding: 61px calc((100% - 628px) / 2);
-    justify-content: space-between;
+    padding: 60px calc((100% - 628px) / 2);
+    row-gap: 30px;
   }
 
   .location__text {
@@ -73,7 +83,9 @@
     font-size: 16px;
     line-height: 20px;
     width: 160px;
+    min-height: 80px;
     text-align: end;
+    justify-self: end;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -84,20 +96,26 @@
   }
 
   .location__map iframe {
-    height: 400px;
+    min-height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .location {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   .location__description {
-    position: absolute;
-    top: 95px;
-    left: calc((100% - 1220px) / 2);
+    margin-left: calc((100% - 1220px) / 2);
+    margin-bottom: 11px;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
     width: 565px;
     min-height: 199px;
     padding: 60px 78px 60px 80px;
     background-color: $white;
-    justify-content: space-between;
     z-index: 3;
 
     &--inner {
@@ -108,5 +126,14 @@
   .location__address {
     width: 157px;
     text-align: start;
+  }
+
+  .location__map {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .location__map iframe {
+    height: 100%;
   }
 }

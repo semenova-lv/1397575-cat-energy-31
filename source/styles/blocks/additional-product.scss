@@ -35,16 +35,9 @@
   line-height: 14px;
   display: flex;
   justify-content: space-between;
+  column-gap: 10px;
   grid-column: 1/-1;
 }
-
-// .additional-product__property-item {
-
-// }
-
-// .additional-product__feature {
-
-// }
 
 .additional-product__definition {
   margin: 0;
@@ -80,6 +73,7 @@
     grid-column: 2;
     display: grid;
     grid-template-columns: 1fr 91px;
+    column-gap: 0;
     place-items: center end;
   }
 
