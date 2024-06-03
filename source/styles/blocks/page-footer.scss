@@ -16,17 +16,18 @@
   border-bottom: 1px solid #d9d9d9;
   text-align: center;
 
-  &:hover .page-footer__logo-text {
-    fill: #3e3e3e;
+  &:hover {
+    opacity: 0.8;
   }
 
-  &:active .page-footer__logo-text {
-    fill: #6b6b6b;
+  &:active {
+    opacity: 0.6;
   }
 }
 
-.page-footer__logo-text {
-  fill: $text-special-grey;
+.page-footer__logo img {
+  display: block;
+  margin: 0 auto;
 }
 
 .page-footer__social {

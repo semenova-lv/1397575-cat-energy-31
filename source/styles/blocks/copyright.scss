@@ -13,8 +13,20 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover .copyright__logo {
-    fill: $bg-basic-green;
+  &::after {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 34px;
+    background-color: #666666;
+    mask-image: url("../../icons/stack.svg#logo-htmlacademy");
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+  }
+
+  &:hover::after {
+    background-color: $bg-basic-green;
   }
 
   &:active {
@@ -27,10 +39,6 @@
   margin: 0;
   font-size: 16px;
   line-height: 20px;
-}
-
-.copyright__logo {
-  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
