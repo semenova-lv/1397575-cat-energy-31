@@ -13,8 +13,8 @@
   }
 
   &:not(:disabled):focus {
-    outline: none;
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
+    outline-offset: -2px;
   }
 
   &:disabled {
